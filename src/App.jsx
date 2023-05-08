@@ -46,8 +46,32 @@ function App() {
           <div className='my-5 p-5 border shadow-2xl rounded-3xl flex flex-col'>
             <div className='w-1/2 mx-auto '>
               <h2 className='text-center font-bold text-2xl'>
-                Change The Theme
+                Background Theme
               </h2>
+
+              <div className='flex justify-center my-5 over over'>
+                <button
+                  type='button'
+                  className='btn btn-outline rounded-none rounded-l-3xl '
+                  onClick={() => {
+                    setBgColor("#ffffff");
+                    setFgColor("#000000");
+                  }}
+                >
+                  black & white
+                </button>
+
+                <button
+                  type='button'
+                  className='btn btn-outline rounded-none rounded-r-3xl'
+                  onClick={() => {
+                    setBgColor("#000000");
+                    setFgColor("#ffffff");
+                  }}
+                >
+                  white & black
+                </button>
+              </div>
 
               <div className='form-control'>
                 <label className='label cursor-pointer'>
